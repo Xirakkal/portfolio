@@ -1,30 +1,30 @@
 @use "bootstrap" with (
-    $light: #a7c080,
-    $danger: #e67e80,
-    $warning: #dbbc7f,
-    $success: #7fbbb3,
-    $primary: #2e383c,
-    $secondary: #1e2326,
-    $white: #d3c6aa,
-    $font-family-sans-serif: "Kode Mono"
+  $light: #a7c080,
+  $danger: #e67e80,
+  $warning: #dbbc7f,
+  $success: #7fbbb3,
+  $primary: #2e383c,
+  $secondary: #1e2326,
+  $white: #d3c6aa,
+  $font-family-sans-serif: "Kode Mono",
 );
 
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700");
 @import url("https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap");
 
 .Convergence {
-    font-family: "Sixtyfour Convergence", sans-serif !important;
-    // margin-top: 5px !important;
+  font-family: "Sixtyfour Convergence", sans-serif !important;
+  // margin-top: 5px !important;
 }
 
 .logo-h2 {
-    margin-bottom: -6px;
+  margin-bottom: -6px;
 }
 
 .w-33 {
-    width: 33%;
+  width: 33%;
 }
 
 #headerContent:not(.show) .collapseinner {
-  display: block; 
+  display: block;
 }
