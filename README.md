@@ -1,1 +1,3 @@
 My personal portfolio, built from [soleneggd's Web3 starter](https://github.com/soleneggd/web3-starter) and using Bootstrap 5.3.0.
+
+Hosted at [https://xirakkal.github.io/portfolio/](https://xirakkal.github.io/portfolio/).
