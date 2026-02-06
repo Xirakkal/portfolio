@@ -6,7 +6,7 @@
   $primary: #2e383c,
   $secondary: #1e2326,
   $white: #d3c6aa,
-  $font-family-sans-serif: "Kode Mono",
+  $font-family-sans-serif: "Kode Mono"
 );
 
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700");
@@ -17,6 +17,16 @@
   // margin-top: 5px !important;
 }
 
+//la navbar apparaît après le hero
+#mainNav {
+  transform: translateY(-100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+#mainNav.show {
+  transform: translateY(0);
+}
+
 .logo-h2 {
   margin-bottom: -6px;
 }
@@ -25,6 +35,21 @@
   width: 33%;
 }
 
+#cta-hero:hover {
+  color: bootstrap.$primary;
+}
+
 #headerContent:not(.show) .collapseinner {
   display: block;
+}
+
+//régler les problèmes de line height avec les icones par le font custom
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.icon-link .bi {
+  line-height: 1;
 }

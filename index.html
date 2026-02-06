@@ -1,91 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <link href="https://languages.abranhe.com/logos.css" rel="stylesheet" />
-    <title>Portfolio</title>
-  </head>
 
-  <body class="bg-secondary text-white">
-    <header class="bg-secondary sticky-top">
-      <div
-        class="d-sm-flex flex-column flex-lg-row justify-content-between align-items-center container py-3"
-      >
-        <div
-          class="d-flex d-sm-block justify-content-between align-items-center"
-        >
-          <div>
-            <a href="#" class="text-decoration-none">
-              <h2 class="Convergence mt-1 mb-0">XIRAKKAL</h2>
-            </a>
-          </div>
-          <button
-            class="btn btn-secondary text-white fs-3 d-sm-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#headerContent"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+</head>
+
+<body class="bg-secondary text-white">
+  <header class="bg-primary fixed-top" id="mainNav">
+    <div class="d-sm-flex flex-column flex-lg-row justify-content-between align-items-center container py-3">
+      <div class="d-flex d-sm-block justify-content-between align-items-center">
         <div>
-          <nav class="collapse d-sm-flex" id="headerContent">
-            <div class="collapseinner d-flex flex-column flex-sm-row">
-              <a
-                href="#"
-                class="link-light active fs-3 text-decoration-none me-4"
-                >Portfolio</a
-              >
-              <a href="#" class="link-light fs-3 text-decoration-none me-4"
-                >Qui suis-je ?</a
-              >
-              <a href="#" class="link-light fs-3 text-decoration-none"
-                >Contact</a
-              >
-            </div>
-          </nav>
+          <a href="#" class="text-decoration-none">
+            <h2 class="Convergence mt-1 mb-0">XIRAKKAL</h2>
+          </a>
         </div>
+        <button class="btn btn-secondary text-white fs-3 d-sm-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#headerContent">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
-    </header>
-    <main>
-      <div class="bg-primary py-5">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex flex-column justify-content-between"
-            >
-              <div>
-                <p class="h1">Hey!</p>
-                <p class="h1 mb-5">
-                  Moi c'est <span class="fw-bold text-light">Paul</span>, alias
-                  Xirakkal !
-                </p>
-              </div>
-              <div>
-                <p>
-                  Bienvenue sur <br />
-                  mon <span class="fw-bold text-light">PORTFOLIO</span>.
-                </p>
-                <p class="align-self-end">
-                  Il regroupe mes travaux personnels, mes projets universitaires
-                  et d'autres éléments plus anciens.
-                </p>
-              </div>
+      <div>
+        <nav class="collapse d-sm-flex" id="headerContent">
+          <div class="collapseinner d-flex flex-column flex-sm-row">
+            <a href="#portfolio" class="link-light active fs-3 text-decoration-none me-4">Portfolio</a>
+            <a href="#presentation" class="link-light fs-3 text-decoration-none me-4">Qui suis-je ?</a>
+            <a href="#contact" class="link-light fs-3 text-decoration-none">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="bg-primary py-5 min-vh-100 d-flex" id="hero">
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex flex-column justify-content-between">
+            <div>
+              <p class="h1 text-warning">Hey !</p>
+              <p class="h1 mb-5">
+                Moi c'est <span class="fw-bold text-light">Paul</span>, alias
+                <span class="text-warning">Xirakkal</span> !
+              </p>
             </div>
-            <div
-              class="col-md-6 col-lg-8 text-end fs-3 lh-sm d-none d-lg-block text-light"
-            >
-              <pre>
+            <div>
+              <p>
+                Bienvenue sur <br />
+                mon <span class="fw-bold text-light">PORTFOLIO</span>.
+              </p>
+              <p class="align-self-end">
+                Il regroupe mes <span class="text-danger">travaux personnels</span>, mes <span class="text-danger">
+                  projets universitaires</span>
+                et d'autres éléments plus anciens.
+              </p>
+            </div>
+            <div class="my-5">
+              <a href="#portfolio" class="btn btn-outline-light btn-lg icon-link icon-link-hover"
+                id="cta-hero">Découvrir mon travail
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-8 text-end fs-3 lh-sm d-none d-lg-block text-light">
+            <pre>
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⡿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -101,31 +83,35 @@
 ⠀⠀⠀⠀⠀⠉⠉⠀⠀⠿⠿⠛⠋⣿⣿⡟⠿⡿⠉⠛⠿⠿⠛⠋⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠛⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-</pre
-              >
-            </div>
+</pre>
           </div>
         </div>
       </div>
-      <div class="bg-primary py-5">
-        <div class="container">
-          <h2 class="text-light h1">Portfolio</h2>
+    </div>
+    <div class="bg-secondary">
+      <div class="container py-5 border-bottom border-light">
+        <h2 class="h1" id="portfolio"><a class="text-decoration-none text-light" data-bs-toggle="collapse"
+            href="#collapsePortfolio">Portfolio <i class="bi bi-chevron-down"></i></a></h2>
+        <div class="collapse" id="collapsePortfolio">
+          test
           <div class="row row-column-1 row-column-md-2 row-column-lg-3"></div>
         </div>
       </div>
-      <div class="bg-primary py-5">
-        <div class="container">
-          <h2 class="text-light h1">Qui suis-je ?</h2>
-        </div>
+    </div>
+    <div class="bg-secondary">
+      <div class="container py-5 border-bottom border-light">
+        <h2 class="text-light h1" id="presentation">Qui suis-je ?</h2>
       </div>
-      <div class="bg-primary py-5">
-        <div class="container">
-          <h2 class="text-light h1">Contact</h2>
-        </div>
+    </div>
+    <div class="bg-secondary">
+      <div class="container py-5 border-bottom border-light">
+        <h2 class="text-light h1" id="contact">Contact</h2>
       </div>
-    </main>
-    <footer></footer>
-    <script type="module" src="/main.js"></script>
-  </body>
-  <div></div>
+    </div>
+  </main>
+  <footer></footer>
+  <script type="module" src="/main.js"></script>
+</body>
+<div></div>
+
 </html>
