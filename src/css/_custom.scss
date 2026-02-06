@@ -17,6 +17,10 @@
   // margin-top: 5px !important;
 }
 
+* {
+  border-radius: 0 !important;
+}
+
 //la navbar apparaît après le hero
 #mainNav {
   transform: translateY(-100%);
