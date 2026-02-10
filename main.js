@@ -21,7 +21,7 @@ observer.observe(hero);
 
 //ouvrir le portfolio si on clique sur le CTA
 
-const heroCta = document.getElementById('cta-hero');
-const portfolioCollapse = document.getElementById('collapsePortfolio');
+//const heroCta = document.getElementById('cta-hero');
+//const portfolioCollapse = document.getElementById('collapsePortfolio');
 
-heroCta.addEventListener("click", function () { portfolioCollapse.classList.add("show") });
+//heroCta.addEventListener("click", function () { portfolioCollapse.classList.add("show") });

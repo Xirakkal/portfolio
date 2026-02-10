@@ -39,7 +39,7 @@
   width: 33%;
 }
 
-#cta-hero:hover {
+#cta-hero:hover, #submitContactForm {
   color: bootstrap.$primary;
 }
 
@@ -56,4 +56,35 @@
 
 .icon-link .bi {
   line-height: 1;
+}
+
+//faire défiler les icones de "qui suis-je"
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0px;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+//labels du form
+
+form#contactForm label {
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
