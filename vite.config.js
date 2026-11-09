@@ -22,7 +22,7 @@ export default defineConfig(({ command }) => {
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),
-          musicshop: resolve(__dirname, 'musicshop.html'),
+          // musicshop: resolve(__dirname, 'musicshop.html'),
         },
       },
     },
